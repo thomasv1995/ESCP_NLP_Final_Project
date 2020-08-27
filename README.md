@@ -19,16 +19,29 @@ This part consists of consolidating the text files that were provided into a sin
 • We clean, tokenize and stem all the text  
 • Fix the high-cardinality of the country variable by merging certain countries into one class  
 • Create a table of answers related to our 100,000 questions that includes tokens for each answer's respective question and comments  
-• Check the class distribution of the target variable "is_best_answer":
-    - we find that class "1" is highly under-represented (we will deal with this in the modeling part)  
-
+• Check the class distribution of the target variable "is_best_answer": we find that class "1" is highly under-represented (we will deal with this in the modeling part)  
 
 ### III. Modeling
 
+• Perform 80/20 training and testing split  
+• Dummify categorical variables  
+• Also perform SMOTE to get 50/50 balance of the target variable  
+• Scale the data  
+
 #### A) Word2Vec
+
+• We create vector embeddings to numerically represent the tokens from comments and questions using Word2Vec  
 
 #### B) Logistic Regression
 
+• Train AUC: 98%  
+• Test AUC: 80%. 
+
 #### C) Random Forest
 
+• Train AUC: 100%   
+• Test AUC: 99%  
+
 #### D) Random Forest vs. Logistic Regression
+
+• Visualize the difference between AUC curves for both Random Forest and Logistic Regression  
