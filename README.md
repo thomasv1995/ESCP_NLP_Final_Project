@@ -3,7 +3,7 @@
 *Group 5: Amélie Pingeot, Youssef Jachttar, Qinjiong Zeng & Thomas Vermaelen* 
 
 This is the final project to our class in Natural Language Processing. For this assignment we are tasked to predict the best answer 
-for each question that was posted on an online forum. We are provide a dataset containing observations that consist of either questions, answers or comments. 
+for each question that was posted on online forums. We are provide a dataset containing observations that consist of either questions, answers or comments. 
 The variables include the observation id, parent id (for answer and comments only), the text, is_best_answer, category, date, just to name a few. 
 Our final results reveal that Random Forest outperforms Logistic Regression in predicting the best answer, where AUC of RF = 0.99 and AUC of LR = 0.80 for the testing set.  
 
